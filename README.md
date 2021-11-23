@@ -3,14 +3,17 @@ Module 2-VBA-Stock Analysis
 Stock Analysis
 
 Overview
+
 This project was to refacter the MS VBA code to collect stock information for 2017 and 2018.The data collected would help the user to determine if the stocks are good to invest. The goal of the project is to increase the efficiency of the orginal code from the module.
 
 Analysis
+
 After applying the code to collect data from the origin data workshhets, the 12 different stocks,ticker value and return on each stock would be pointed out in the worksheet “All Stocks Analysis"
 The timer setting is to show the time used to run the code. It would indicate how efficient this project works.
 
 The code applied is following:
 
+_______________________________________________________________________________
 Sub AllStocksAnalysisRefactored()
     Dim startTime As Single
     Dim endTime  As Single
@@ -143,7 +146,7 @@ Sub AllStocksAnalysisRefactored()
     MsgBox "This code ran in " & (endTime - startTime) & " seconds for the year " & (yearValue)
 
 End Sub
-
+____________________________________________________________________________________________________________________________________________________________________________-
 
 Summary
 
@@ -155,4 +158,4 @@ Disadvantages of refactoring code
 - Refactoring code might cause the miscoding for the variables. Same output worksheet used might have the overlapped info from the original code.
 
 Advantages of refactored VBA Script
-The screenshot shows the code ran both 2018 and 2017 data under 0.25 second. Very little time used to get the outcomes. The origin code takes around 1 second to run the result. This VBA Script shows the efficiency approved.
+- The screenshot shows the code ran both 2018 and 2017 data under 0.25 second. Very little time used to get the outcomes. The origin code takes around 1 second to run the result. This VBA Script shows the efficiency approved.
